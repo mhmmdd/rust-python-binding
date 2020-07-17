@@ -18,6 +18,15 @@ _rustup 1.22.1 (b01adbbc3 2020-07-08)_
 It would be .so on Linux or .dll on Windows\
 `$ cp target/release/mylib.dll ./mylib.pyd`
 
+### Raspberry Pi build
+`$ python3 --version`\
+_Python 3.7.3_\
+`$ which python3`\
+_/usr/bin/python3_\
+`$ PYTHON_SYS_EXECUTABLE="/usr/bin/python3" cargo build --release`\
+`$ cp target/release/libmylib.so ./mylib.so`
+
+
 ## Test on Python
 `$ python`
 ```
