@@ -1,0 +1,18 @@
+[package]
+name = "mylib"
+version = "0.1.0"
+authors = ["mhmmdd <mhmmd.dd@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "mylib"
+# for dynamic library: a .dll file on Windows, .so on Linux, or .dylib on Mac.
+crate-type = ["cdylib"]
+
+[dependencies.cpython]
+version = "0.5"
+features = ["extension-module"]
+
+[dependencies]
